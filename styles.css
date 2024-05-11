@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+:root {
+  --Purple: hsl(259, 100%, 65%);
+  --Light-red: hsl(0, 100%, 67%);
+
+  --White: hsl(0, 0%, 100%);
+  --Off-white: hsl(0, 0%, 94%);
+  --Light-grey: hsl(0, 0%, 86%);
+  --Smokey-grey: hsl(0, 1%, 44%);
+  --Smokey-grey1: #e3e2e2;
+  --Off-black: hsl(0, 0%, 8%);
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+html {
+  font-size: 63.5%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  background-color: var(--Smokey-grey1);
+}
+
+.container {
+  background-color: var(--White);
+  padding: 5rem;
+  width: 70rem;
+
+  border-radius: 1.5rem;
+  border-bottom-right-radius: 15rem;
+}
+
+.dates {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 1.5rem;
+}
+
+input {
+  width: 13rem;
+  padding: 1rem;
+  padding: 1rem 1.5rem;
+  font-size: 2.5rem;
+  margin-top: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #00000030;
+  margin-bottom: 0.5rem;
+
+  cursor: pointer;
+}
+
+input:focus {
+  outline: none;
+  border: 1px solid purple;
+}
+
+.hidden {
+  display: none;
+}
+
+.error-msg {
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: 400;
+  color: #ff00008f;
+}
+
+.submit-part {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  width: 8rem;
+  height: 8rem;
+  background-color: var(--Purple);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 4rem;
+  cursor: pointer;
+}
+
+.icon:hover {
+  background-color: #000;
+}
+
+.icon img {
+  width: 3.5rem;
+}
+
+.line {
+  flex: 1;
+  height: 0.5px;
+  background-color: #00000030;
+}
+
+.result {
+  font-size: 8rem;
+  line-height: 1.2;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.result span {
+  color: var(--Purple);
+  font-weight: 900;
+  /* font-size: 5.5rem; */
+}
+
+label {
+  letter-spacing: 2px;
+  color: var(--Smokey-grey);
+}

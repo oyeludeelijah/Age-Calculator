@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Age calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <section>
+        <div class="dates">
+          <div class="day">
+            <label class="label" for="day">Day</label><br />
+            <input
+              class="inputs"
+              type="number"
+              id="day-input"
+              placeholder="DD"
+            />
+            <p class="error-msg" id="error-msg1"></p>
+          </div>
+          <div class="month">
+            <label class="label" for="month">Month</label><br />
+            <input
+              class="inputs"
+              type="number"
+              id="month-input"
+              placeholder="MM"
+            />
+            <p class="error-msg" id="error-msg2"></p>
+          </div>
+          <div class="year">
+            <label class="label" for="year">Year</label><br />
+            <input
+              class="inputs"
+              type="number"
+              id="year-input"
+              placeholder="YYYY"
+            />
+            <p class="error-msg" id="error-msg3"></p>
+          </div>
+        </div>
+        <div class="submit-part">
+          <div class="line"></div>
+          <div class="icon" id="submit">
+            <img src="assets/images/icon-arrow.svg" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="result">
+          <span id="year-result">--</span> years <br />
+          <span id="month-result">--</span> months <br />
+          <span id="days-result">--</span> days
+        </div>
+      </section>
+    </div>
+    <!--   
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+
+    <script src="script.js"></script>
+  </body>
+</html>
